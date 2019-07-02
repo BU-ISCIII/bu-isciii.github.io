@@ -1,0 +1,7 @@
+Configuration file: /media/bioinfo/NGS_Disk_Data/datos/bu-isciii.github.io/_config.yml
+            Source: .
+       Destination: ./_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+jekyll 3.8.5 | Error:  Could not locate the included file '_includes/default-header.html' in any of ["/media/bioinfo/NGS_Disk_Data/datos/bu-isciii.github.io/_includes"]. Ensure it exists in one of those directories and, if it is a symlink, does not point outside your site source.
