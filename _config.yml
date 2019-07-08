@@ -17,7 +17,7 @@ title: "BU-ISCIII"
 email: "bioinformatica@isciii.es"
 description: "A collection of Services delivered by Bioinformatic Unit at ISCIII"
 url: "https://bu-isciii.github.io"
-baseurl: "/"
+baseurl: ""
 twitter_username: "jekyllrb"
 github_username:  "jekyll"
 

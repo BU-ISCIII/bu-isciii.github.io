@@ -18,14 +18,14 @@
         </script>
         {% endif %}
         <link rel="stylesheet" href="{{ "assets/css/bootstrap.min.css" | prepend: site.baseurl }}">
-        <link rel="stylesheet" href="{{ "assets/css/bootstrap-toc.min.css" | prepend: site.baseurl }}">
-        <link rel="stylesheet" href="{{ "assets/css/font-awesome.css" | prepend: site.baseurl }}">
-        <link rel="stylesheet" href="{{ "assets/css/all.css" | prepend: site.baseurl }}">
-        <link rel="stylesheet" href="{{ "assets/css/layout.css" | prepend: site.baseurl }}">
-        <link rel="stylesheet" href="{{ "assets/css/icons.css" | prepend: site.baseurl }}">
-        <link rel="shortcut icon" href="{{ "assets/images/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon" />
+        <link rel="stylesheet" href="{{ "/assets/css/bootstrap-toc.min.css" | prepend: site.baseurl }}">
+        <link rel="stylesheet" href="{{ "/assets/css/font-awesome.css" | prepend: site.baseurl }}">
+        <link rel="stylesheet" href="{{ "/assets/css/all.css" | prepend: site.baseurl }}">
+        <link rel="stylesheet" href="{{ "/assets/css/layout.css" | prepend: site.baseurl }}">
+        <link rel="stylesheet" href="{{ "/assets/css/icons.css" | prepend: site.baseurl }}">
+        <link rel="shortcut icon" href="{{ "/assets/images/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon" />
 
-        <link rel="stylesheet" href="{{ "assets/css/layout-homepage.css" | prepend: site.baseurl }}">
+        <link rel="stylesheet" href="{{ "/assets/css/layout-homepage.css" | prepend: site.baseurl }}">
 
        {% assign topic = site.data[page.topic_name] %}
         {% assign og_title = topic.title %}
@@ -44,8 +44,8 @@
     <body data-spy="scroll" data-target="#toc">
         {{ content }}
     </body>
-    <script type="text/javascript" src="{{ "assets/js/jquery-3.4.1.min.js" | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ "assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/assets/js/jquery-3.4.1.min.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript">
     var snippets=document.querySelectorAll('div.highlight');
