@@ -27,11 +27,7 @@
 
         <link rel="stylesheet" href="{{ "assets/css/layout-homepage.css" | prepend: site.baseurl }}">
 
-        <link rel="stylesheet" href="{{ "/assets/css/academicons.css" | prepend: site.baseurl }}">
-        <link rel="stylesheet" href="{{ "/assets/css/syntax_highlighting.css" | prepend: site.baseurl }}">
-
-
-        {% assign topic = site.data[page.topic_name] %}
+       {% assign topic = site.data[page.topic_name] %}
         {% assign og_title = topic.title %}
         {% if page.title %}
           {% assign og_title = page.title %}
@@ -49,14 +45,8 @@
         {{ content }}
     </body>
     <script type="text/javascript" src="{{ "assets/js/jquery-3.4.1.min.js" | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ "/assets/js/popper.min.js" | prepend: site.baseurl }}"></script>
     <script type="text/javascript" src="{{ "assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ "/assets/js/details-element-polyfill.js" | prepend: site.baseurl }}"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="{{ "/assets/js/bootstrap-toc.min.js" | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
-
-    <script type="text/javascript" src="{{ "/assets/js/clipboard.min.js" | prepend: site.baseurl }}"></script>
     <script type="text/javascript">
     var snippets=document.querySelectorAll('div.highlight');
     [].forEach.call(snippets,function(snippet){
