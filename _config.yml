@@ -23,8 +23,8 @@ github_username:  "jekyll"
 
 repository: "bu-isciii.github.io/"
 repository_branch: "master"
-logo: "assets/images/logo_bu_isciii.png"
-small_logo: "assets/images/GTN-60px.png"
+logo: "/assets/images/logo_bu_isciii.png"
+small_logo: "/assets/images/GTN-60px.png"
 
 # Where things are
 source: .
