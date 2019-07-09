@@ -1,0 +1,12 @@
+---
+name: "service_management"
+type: "use"
+title: "Service Management"
+summary: "Summary for Service Management. "
+docker_image: "docker image"
+
+requirements:
+
+maintainers:
+  - jennaj
+  - tnabtaf

@@ -1,0 +1,12 @@
+---
+name: "services_portfolio"
+type: "use"
+title: "Service portfolio"
+summary: "Summary for Services portfolio. "
+docker_image: "docker image"
+
+requirements:
+
+maintainers:
+  - jennaj
+  - tnabtaf

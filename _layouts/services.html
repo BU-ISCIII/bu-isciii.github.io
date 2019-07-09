@@ -5,26 +5,75 @@ layout: base
 {% include _includes/default-header.html %}
 {% assign contributors = site.data['contributors'] %}
 
-{% assign sorted_topics = "" | split: "," %}
-{% assign sorted_topics_pre = site.data | sort | order: "title" %}
 
-{% for topic in sorted_topics_pre %}
-    {% if topic[0] == "introduction" %}
-        {% assign sorted_topics = sorted_topics | unshift: topic %}
-    {% else %}
-        {% assign sorted_topics = sorted_topics | push: topic %}
-    {% endif %}
-{% endfor %}
+<div class="container main-content">
+      <BR><BR><BR><BR><BR><BR><BR>
+        <h2>Welcome to {{ site.title }}</h2>
+        <p class="lead">
+            Services portfolio developed and maintained by {{ site.title}} unit
+        </p>
+</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<div class="row row-space-2 margin-b-4">
-    <div class="col-sm-10" >
+
+<div class="container">
+<div class="row row-space-2 margin-b-2">
+    <div class="col-md-10" >
       <div class="panel panel-default">
         <div class="panel-heading"><H2>Services</H2></div>
         <div class="panel-body">
-            <p>BU-ISCIII supports bioinformatic analysis to BU-ISCIII researchers offering different services based on the institution demand. The services available are describe in the service portfolio,and are managed following the BU-ISCIII service management protocol.</p>
+            <p>BU-ISCIII supports bioinformatic analysis to BU-ISCIII researchers offering different services based on the institution demand.</p> <p>The services available are describe in the service portfolio,and are managed following the BU-ISCIII service management protocol.</p>
         </div> <!--  end of panel body -->
       </div> <!--  end of panel  -->
    </div> <!--  end of col-sm-10 -->
 </div> <!--  end of row -->
+</div>
+
+<div class="container">
+<div class="row row-space-2 margin-b-2">
+    <div class="col-md-10" >
+      <div class="panel panel-default">
+        <div class="panel-heading"><H2>Services 2</H2></div>
+        <div class="panel-body">
+            <p>BU-ISCIII supports bioinformatic analysis to BU-ISCIII researchers offering different services based on the institution demand.</p> <p>The services available are describe in the service portfolio,and are managed following the BU-ISCIII service management protocol.</p>
+            {% assign sorted_services = "" | split: "," %}
+            {% assign sorted_services_pre = site.data | sort | order: "title" %}
+
+            {% for services in sorted_services_pre %}
+                  <p>aaa = {{services}}</p>
+                    {% assign sorted_services = sorted_services | push: services %}
+            {% endfor %}
+
+            <p>Valor de sorted_services_pre -- {{ sorted_services_pre }}</p>
+            <p>tttt</p>
+            <p>Valor de sorted_services -- {{ sorted_services }}</p>
+            <table class="table table-striped">
+                   <thead>
+                       <tr>
+                           <th>Topic</td>
+                           <th>Tutorials</td>
+                       </tr>
+                   </thead>
+                    <tbody>
+                {% for services in sorted_services %}
+
+                        <tr>
+                            <p>services [1] = {{ services[1].name }}</p>
+                            {% assign tutorial_number = site.pages | services_filter:services[1].name | services_count %}
+                            <td><a href="{{ site.baseurl }}/services/{{ services[1].name }}/">title ={{ services[1].title }}, service_value = {{ services[1] }}</a></td>
+                            <td>{{ tutorial_number }}   </td>
+                        </tr>
+
+{% endfor %}
+              </tbody>
+              </table>
+
+        </div> <!--  end of panel body -->
+      </div> <!--  end of panel  -->
+   </div> <!--  end of col-sm-10 -->
+</div> <!--  end of row -->
+</div>
 
 {% include _includes/default-footer.html %}
